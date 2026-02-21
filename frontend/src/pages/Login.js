@@ -18,7 +18,7 @@ function Login() {
       setLoading(true);
 
       try {
-        const response = await fetch("http://localhost:5000/api/login", {
+        const response = await fetch("https://frontend-task-project.onrender.com/api/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -45,7 +45,7 @@ function Login() {
   const handleGoogleSuccess = async (credentialResponse) => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/google-login",
+        "https://frontend-task-project.onrender.com/api/google-login",
         {
           method: "POST",
           headers: {
